@@ -11,8 +11,8 @@ var allowCrossDomain = function(req,resp,next){
 app.use(allowCrossDomain);
 
 app.get('/', function (req, res) {
-    res.setHeader('Content-Type','text/json');
-  res.send('{srikamth:"cyient"}')
+ // res.setHeader('Content-Type','text/json');
+  res.json('{srikamth:"cyient"}')
 })
  
 app.listen(3000)
